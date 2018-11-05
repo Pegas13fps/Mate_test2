@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mate Academy</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./img/logo.gif" alt="Logo">
+        <div class="info-text">
+            <h3>New Free Training from Ari:</h3>
+            <p>The Secret to Easily Crafting<br> a Mouth-Watering Offer<br> Thet Your Tribe <b>Cannot Resist</b></p>
+        </div>
+        <div class="registration">
+            <p>Tuesday, September 13<sup>th</sup>, 12:30pm EST</p>
+            <button onclick = "takeForm()" id="registration-form" class="btn-registr" type="submit">REGISTER NOW</button>
+        </div>
+        <div class="scroll">
+            <p>SCROLL DOWN</p>
+            <img src="./img/triangle.gif" alt="Triangle">
+        </div>
+    </header>
+
+    <main>
+        <div class="video-box">
+            <video muted controls="controls" poster="img/bg-video.gif">
+            <source src="video/island.mp4" />
+            <source src="video/island.ogv" />
+            <source src="video/movie.webm" />
+        </div>
+        <div class="info-list">
+            <h2>IN THIS NEW TRAINING<br> WE'LL COVER:</h2>
+            <ul>
+                <li>Why the right OFFER generates more results than any other part of your message</li>
+                <li>The 6 steps to easily craft an irresistible OFFER, everytime</li>
+                <li>The 3 pillars of every irresistible offer (miss one and the offer is boring)</li>
+                <li>The simple formula: HV + LI = Irresistible Offer</li>
+                <li>PROOF: 5 brilliant IRRESISTIBLE OFFERS (that generated millions!)</li>
+                <li>MORE PROOF: 3 wildly fun winning SPLIT - TESTS of irresistible OFFERS</li>
+                <li class="heart-ico">PLUS! An on-camera live Q&A at the end to ask Ari.... anything!</li>
+            </ul>
+            <button onclick = "takeForm()" id="registration-form2" class="btn-registr" type="submit">REGISTER NOW</button>
+        </div>
+        <div id="form-box">
+                <form>  
+                    <label for="firstname">First name:</label>
+                    <input style="width: 100%" type="text" name="firstname"><br>
+                    <label for="lastname">Last name:</label>
+                    <input style="width: 100%" type="text" name="lastname"><br>
+                    <label for="email">Email</label>
+                    <input style="width: 100%" type="email" name="email" placeholder="Email"><br>
+
+                    <input class="gender" type="radio" name="gender" value="male" checked> Male
+                    <input class="gender" type="radio" name="gender" value="female"> Female<br>
+                    <input id="send-form" type="submit" value="Submit">
+                </form> 
+        </div>
+
+    </main>
+
+    <footer>
+        <p>HERE'S WHAT PEOPLE ARE SAYING:</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

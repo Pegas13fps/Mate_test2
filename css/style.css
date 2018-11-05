@@ -1,0 +1,274 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+@font-face {
+  font-family: MullerBold;
+  src: url(../fonts/MullerBold.otf);
+}
+@font-face {
+  font-family: MullerRegular;
+  src: url(../fonts/MullerRegular.otf);
+}
+@font-face {
+  font-family: AvertaRegular;
+  src: url(../fonts/Averta-Regular.woff);
+}
+body {
+
+}
+header {
+  height: 1080px;
+  background: url(../img/bg-header.gif) no-repeat 50%;
+  background-size: cover;
+  position: relative;
+}
+header .logo {
+  position: absolute;
+  left: 10%;
+}
+.info-text {
+  padding: 310px 0 0 10%;
+}
+.info-text h3 {
+  font-family: MullerBold;
+  color: #44a09b;
+  font-size: 32px;
+  line-height: 25.63px;
+  margin-bottom: 40px;
+}
+.info-text p {
+  font-family: MullerRegular;
+  font-size: 62px;
+  line-height: 84px;
+}
+.registration {
+  background: #fff;
+  height: 215px;
+  width: 825px;
+  margin-top: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 100px 100px 0;
+  -webkit-border-radius: 0 100px 100px 0;
+  -moz-border-radius: 0 100px 100px 0;
+  -ms-border-radius: 0 100px 100px 0;
+  -o-border-radius: 0 100px 100px 0;
+}
+.registration p {
+  font-family: MullerRegular;
+  color: #ff8141;
+  font-size: 28px;
+  line-height: 46.74px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.btn-registr {
+  width: 495px;
+  height: 65px;
+  background: #ff8141;
+  color: #fff;
+  font-family: MullerBold;
+  font-size: 34px;
+  line-height: 42.61px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.btn-registr:hover {
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+sup { vertical-align: baseline; position: relative; top: -0.4em; }
+
+header .scroll {
+  text-align: center;
+  margin: 70px 0 0 0;
+}
+header .scroll p {
+  font-family: AvertaRegular;
+  font-size: 16.22px;
+  line-height: 19.82px;
+  margin-bottom: 10px;
+  color: #FFF;
+  font-weight: bold;
+}
+main {
+  display: flex;
+}
+main .video-box {
+  width: 56.5%;
+}
+main .info-list {
+  width: 43.5%;
+  padding: 130px 90px 120px 130px;
+}
+main .info-list h2 {
+  font-family: AvertaRegular;
+  font-size: 42px;
+  color: #3a4a62;
+  margin-bottom: 45px;
+}
+main .info-list ul {
+  list-style: none;
+}
+main .info-list ul li {
+  position: relative;
+  padding: 0 0 0 20px;
+  margin: 15px 0;
+  font-family: AvertaRegular;
+  font-weight: 100;
+  font-size: 22px;
+  color: #575656;
+}
+main .info-list ul li::before {
+  content: url(../img/arrow.gif);
+  position: absolute;
+  left: 0;
+}
+main .info-list ul li.heart-ico {
+  margin: 60px 0 85px 0;
+}
+main .info-list ul li.heart-ico::before {
+  content: url(../img/heart.gif);
+  position: absolute;
+  left: 0;
+}
+
+footer {
+  background: #273d50;
+}
+footer p {
+  font-family: AvertaRegular;
+  padding: 95px 0 70px 0;
+  color: #fff;
+  text-align: center;
+  font-size: 55.62px;
+  line-height: 53px;
+}
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: inherit;
+}
+#form-box {
+  display: none;
+}
+#form-box form {
+  position: fixed;
+  left:40%;
+  top: 30%;
+  font-size: 30px;
+  font-family: AvertaRegular;
+  color: #fff;
+  padding: 20px;
+  background: linear-gradient(45deg, #ff8141, #55d0c0);
+  border: 1px solid #df0000;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+#form-box input {
+  border: 2px solid #f2f2f2;
+  outline: none;
+  font-size: 24px;
+}
+#send-from {
+  padding: 5px 20px;
+}
+.gender {
+  width: 20px;
+  height: 20px;
+  margin: 10px 0;
+}
+@media (max-width: 1600px) {
+  main {
+    flex-direction: column;
+  }
+  main .video-box {
+    width: 100%;
+  }
+  main .info-list {
+    margin: 0 auto;
+    width: auto;
+  }
+}
+@media (max-width: 980px) {
+  .registration {
+    margin-top: 5px;
+  }
+  .info-text {
+    padding: 150px 0 0 10%;
+  }
+  .registration {
+    width: 100%;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+  }
+}
+@media (max-width: 778px) {
+  .info-text {
+    font-size: 54px;
+  }
+  header .scroll {
+    margin: 20px 0 0;
+  }
+  main .info-list {
+    padding: 5%;
+  }
+}
+@media (max-width: 600px) {
+  .btn-registr {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 560px) {
+  .info-text p {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  header .scroll {
+    margin: 80px 0 0;
+  }
+  .registration p {
+    width: 95%;
+  }
+}
+@media (max-width: 400px) {
+  .info-text p {
+    font-size: 38px;
+    line-height: 62px;
+  }
+}
